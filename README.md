@@ -12,6 +12,7 @@ warrant a full blog post.
 ### Categories
 
 * [JavaScript](#JavaScript)
+* [Linux](#Linux)
 * [python](#python)
 
 ---
@@ -19,6 +20,11 @@ warrant a full blog post.
 
 - [Listing folder contents](JavaScript/listing-folder-contents.md)
 - [Listing folders in current working directory](JavaScript/listing-folders.md)
+
+
+### Linux
+
+- [Arch Linux: How to install an AUR package](Linux/arch-install-aur-package.md)
 
 
 ### python
