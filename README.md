@@ -11,12 +11,17 @@ warrant a full blog post.
 
 ### Categories
 
+* [DevOps](#DevOps)
 * [JavaScript](#JavaScript)
 * [Linux](#Linux)
-* [Terraform](#Terraform)
 * [python](#python)
 
 ---
+### DevOps
+
+- [Terraform offline plugin cache](DevOps/offline-plugin-cache.md)
+
+
 ### JavaScript
 
 - [Listing folder contents](JavaScript/listing-folder-contents.md)
@@ -26,11 +31,6 @@ warrant a full blog post.
 ### Linux
 
 - [Arch Linux: How to install an AUR package](Linux/arch-install-aur-package.md)
-
-
-### Terraform
-
-- [Terraform offline plugin cache](Terraform/offline-plugin-cache.md)
 
 
 ### python
