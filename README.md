@@ -11,11 +11,17 @@ warrant a full blog post.
 
 ### Categories
 
+* [DevOps](#DevOps)
 * [JavaScript](#JavaScript)
 * [Linux](#Linux)
 * [python](#python)
 
 ---
+### DevOps
+
+- [Terraform offline plugin cache](DevOps/offline-plugin-cache.md)
+
+
 ### JavaScript
 
 - [Listing folder contents](JavaScript/listing-folder-contents.md)
