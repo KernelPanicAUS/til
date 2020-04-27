@@ -13,6 +13,7 @@ warrant a full blog post.
 
 * [JavaScript](#JavaScript)
 * [Linux](#Linux)
+* [Terraform](#Terraform)
 * [python](#python)
 
 ---
@@ -25,6 +26,11 @@ warrant a full blog post.
 ### Linux
 
 - [Arch Linux: How to install an AUR package](Linux/arch-install-aur-package.md)
+
+
+### Terraform
+
+- [Terraform offline plugin cache](Terraform/offline-plugin-cache.md)
 
 
 ### python
