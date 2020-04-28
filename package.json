@@ -1,0 +1,12 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:KernelPanicAUS/til.git",
+  "author": "Thomas Khalil <thomas@khalilt.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "nunjucks": "^3.2.1"
+  }
+}
