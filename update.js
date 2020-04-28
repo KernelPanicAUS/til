@@ -1,23 +1,11 @@
-const { readdirSync, readFileSync } = require('fs')
-
-const top = `
-# TIL
-
-> Today I Learned
-
-A collection of concise write-ups on small things I learn day to day across a
-variety of languages and technologies. These are things that don't really
-warrant a full blog post.
-
----
-
-### Categories
-`
+const { readdirSync, readFileSync, writeFileSync } = require('fs');
+const nunjucks = require('nunjucks');
 
 const getDirectories = source =>
   readdirSync(source, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .filter(dirent => dirent.name.startsWith(".") == false)
+    .filter(dirent => dirent.name.startsWith("node_") == false)
     .map(dirent => dirent.name)
 
 const getDirContents = source =>
@@ -45,16 +33,6 @@ const structures = getDirectories(__dirname)
     }
   })
 
-console.info(top)
+const res = nunjucks.render('./README.md.tpl', { categories: structures });
 
-structures
-  .map(topic => topic.name)
-  .forEach(topic => console.info(`* [${topic}](#${topic})`))
-
-console.info("\n---");
-
-structures.forEach(topic => {
-  console.info(`### ${topic.name}\n`)
-  topic.articles.forEach(article => console.info(`- [${article.name}](${topic.name}/${article.file})`))
-  console.info("\n")
-})
+writeFileSync(`${__dirname}/README.md`, res);
