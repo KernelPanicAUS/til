@@ -1,5 +1,4 @@
-
-# TIL
+# TIL ![](https://github.com/KernelPanicAUS/til/workflows/Node.js%20CI/badge.svg?branch=master)
 
 > Today I Learned
 
