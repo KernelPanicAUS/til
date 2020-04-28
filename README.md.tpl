@@ -10,10 +10,9 @@ warrant a full blog post.
 ---
 
 ### Categories
-
 {% for category in categories %}
 - [{{category.name}}](#{{category.name}})
-{% endfor %}
+{%- endfor %}
 ---
 {% for category in categories %}
 ### {{category.name}}
