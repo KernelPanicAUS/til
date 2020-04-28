@@ -1,18 +1,27 @@
 name: Node.js CI
 
 on:
-  push:
-    branches:
-      - '*'
-      - '!master'
   pull_request:
-    branches: 
-      - '*'
-      - '!master'
+    types:
+      - labeled
+      - unlabeled
+      - synchronize
+      - opened
+      - edited
+      - ready_for_review
+      - reopened
+      - unlocked
+
+  pull_request_review:
+    types:
+      - submitted
+  check_suite:
+    types:
+      - completed
+  status: {}
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,17 +29,22 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: yarn
-    - run: node update.js
-    - run: npm test
-    - name: Check if there are changes
-      id: changes
-      uses: UnicornGlobal/has-changes-action@v1.0.11
-    - name: Process changes
-      if: steps.changes.outputs.changed == 1
-      run: git add . && git commit -m "Github Actions changes" && git push origin
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn
+      - run: node update.js
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+      - name: Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        if: steps.changes.outputs.changed == 1
+        with:
+          commit_message: Apply automatic changes
+          commit_author: Thomas Khalil <thomas@khalilt.com>
+          branch: ${{ github.head_ref }}
