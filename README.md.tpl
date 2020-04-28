@@ -11,7 +11,7 @@ warrant a full blog post.
 
 ### Categories
 {% for category in categories %}
-- [{{category.name}}](#{{category.name}})
+* [{{category.name}}](#{{category.name}})
 {%- endfor %}
 ---
 {% for category in categories %}

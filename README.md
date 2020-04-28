@@ -11,10 +11,10 @@ warrant a full blog post.
 
 ### Categories
 
-- [DevOps](#DevOps)
-- [JavaScript](#JavaScript)
-- [Linux](#Linux)
-- [python](#python)
+* [DevOps](#DevOps)
+* [JavaScript](#JavaScript)
+* [Linux](#Linux)
+* [python](#python)
 ---
 
 ### DevOps
