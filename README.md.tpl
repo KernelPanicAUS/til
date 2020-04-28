@@ -17,7 +17,7 @@ warrant a full blog post.
 ---
 {% for category in categories %}
 ### {{category.name}}
-{% for article in category.articles %}
+{%- for article in category.articles %}
 - [{{article.name}}]({{category.name}}/{{article.file}})
-{% endfor %}
+{%- endfor %}
 {% endfor %}

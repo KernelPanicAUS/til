@@ -23,24 +23,15 @@ warrant a full blog post.
 ---
 
 ### DevOps
-
 - [Terraform offline plugin cache](DevOps/offline-plugin-cache.md)
 
-
 ### JavaScript
-
 - [Listing folder contents](JavaScript/listing-folder-contents.md)
-
 - [Listing folders in current working directory](JavaScript/listing-folders.md)
 
-
 ### Linux
-
 - [Arch Linux: How to install an AUR package](Linux/arch-install-aur-package.md)
 
-
 ### python
-
 - [Selecting a random choice from an array in Python](python/random_choice.md)
-
 
