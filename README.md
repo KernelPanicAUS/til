@@ -13,6 +13,7 @@ warrant a full blog post.
 * [DevOps](#DevOps)
 * [JavaScript](#JavaScript)
 * [Linux](#Linux)
+* [Packer](#Packer)
 * [python](#python)
 ---
 
@@ -25,6 +26,9 @@ warrant a full blog post.
 
 ### Linux
 - [Arch Linux: How to install an AUR package](Linux/arch-install-aur-package.md)
+
+### Packer
+- [Packer: using spot instances for AMI building](Packer/using-spot-instances.md)
 
 ### python
 - [Selecting a random choice from an array in Python](python/random_choice.md)
