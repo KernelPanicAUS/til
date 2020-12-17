@@ -18,6 +18,7 @@ warrant a full blog post.
 
 ### DevOps
 - [Terraform offline plugin cache](DevOps/offline-plugin-cache.md)
+- [Packer: apt lock race condition](DevOps/packer-cloud-init.md)
 - [Packer: running PowerShell as admin](DevOps/packer-windows-admin.md)
 
 ### JavaScript
